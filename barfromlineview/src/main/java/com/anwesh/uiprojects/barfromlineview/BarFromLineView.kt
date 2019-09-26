@@ -221,4 +221,13 @@ class BarFromLineView(ctx : Context) : View(ctx) {
             }
         }
     }
+
+    companion object {
+
+        fun create(activity: Activity) : BarFromLineView {
+            val view : BarFromLineView = BarFromLineView(activity)
+            activity.setContentView(view)
+            return view
+        }
+    }
 }
